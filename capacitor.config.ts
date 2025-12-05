@@ -7,6 +7,20 @@ const config: CapacitorConfig = {
   server: {
     androidScheme: 'https'
   },
+  assets: {
+    icon: {
+      sources: [
+        { src: 'resources/icon.png', platform: 'android' },
+        { src: 'resources/icon.png', platform: 'ios' },
+      ],
+    },
+    splash: {
+      sources: [
+        { src: 'resources/splash.png', platform: 'android' },
+        { src: 'resources/splash.png', platform: 'ios' },
+      ],
+    },
+  },
   plugins: {
     SplashScreen: {
       launchShowDuration: 2000,
