@@ -9,6 +9,7 @@ interface Props {
   formatPrice: (price: number) => string;
   categories: Category[];
   addToCart: (item: CartItem) => void;
+  userBalance: number;
 }
 
 const SearchPage: React.FC<Props> = ({ setView, formatPrice, categories, addToCart }) => {

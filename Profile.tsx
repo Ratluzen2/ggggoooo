@@ -3,8 +3,8 @@ import {
   ArrowLeft, ChevronLeft, Globe, HelpCircle, FileText, 
   LogOut, Star, MessageSquare, Trash2 
 } from 'lucide-react';
-import { View } from '../types';
-import { INITIAL_CURRENCIES } from '../constants';
+import { View } from './types';
+import { INITIAL_CURRENCIES } from './constants';
 
 interface Props {
   setView: (view: View) => void;

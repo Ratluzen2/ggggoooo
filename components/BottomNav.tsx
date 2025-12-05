@@ -6,6 +6,7 @@ import { View } from '../types';
 interface Props {
   currentView: View;
   setView: (view: View) => void;
+  cartItemCount: number;
 }
 
 const BottomNav: React.FC<Props> = ({ currentView, setView }) => {

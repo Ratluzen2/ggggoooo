@@ -6,6 +6,7 @@ import { View } from '../types';
 interface Props {
   setView: (view: View) => void;
   formattedBalance?: string; // Optional to prevent breaking if not passed immediately, though App passes it
+  cartItemCount: number;
 }
 
 const TopHeader: React.FC<Props> = ({ setView, formattedBalance = "$ 0.03" }) => {

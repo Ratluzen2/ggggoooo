@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowLeft, Clock } from 'lucide-react';
-import { View } from '../types';
+import { View } from './types';
 
 interface Props {
   setView: (view: View) => void;
