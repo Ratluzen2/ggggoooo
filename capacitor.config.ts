@@ -14,12 +14,7 @@ const config: CapacitorConfig = {
         { src: 'resources/icon.png', platform: 'ios' },
       ],
     },
-    splash: {
-      sources: [
-        { src: 'resources/splash.png', platform: 'android' },
-        { src: 'resources/splash.png', platform: 'ios' },
-      ],
-    },
+
   },
   plugins: {
     SplashScreen: {
