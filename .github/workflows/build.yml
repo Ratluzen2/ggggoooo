@@ -32,17 +32,14 @@ jobs:
       - name: Build Web Assets
         run: npm run build
 
-      - name: Generate Capacitor Assets
-        run: npx @capacitor/assets generate
-
-      - name: Sync Assets to Android
-        run: npx cap sync android
-
       - name: Initialize Android Platform
         # This creates the android folder inside the CI environment since we didn't push it
         run: npx cap add android
 
-      - name: Sync Capacitor
+      - name: Generate Capacitor Assets
+        run: npx @capacitor/assets generate
+
+      - name: Sync Assets to Android
         run: npx cap sync android
 
       - name: Build APK with Gradle
