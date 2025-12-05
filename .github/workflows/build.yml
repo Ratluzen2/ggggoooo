@@ -33,7 +33,7 @@ jobs:
         run: npm run build
 
       - name: Generate Capacitor Assets
-        run: npx @capacitor/assets generate --icon-src resources/icon.png --splash-src resources/splash.png
+        run: npx cap generate --icon-src resources/icon.png --splash-src resources/splash.png
 
       - name: Initialize Android Platform
         # This creates the android folder inside the CI environment since we didn't push it
